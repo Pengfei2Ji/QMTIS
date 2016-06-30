@@ -1,0 +1,65 @@
+#Dependencies (inside the directory) of the directory ./src/72_response
+#
+#COPYRIGHT
+#Copyright (C) 2010-2016 ABINIT group
+#This file is distributed under the terms of the
+#GNU General Public License, see ~abinit/COPYING
+#or http://www.gnu.org/copyleft/gpl.txt .
+#
+#THIS FILE IS GENERATED AUTOMATICALLY BY abilint.
+#To do that: config/scripts/abilint --dependencies . .
+
+CLEANFILES += \
+	interfaces_72_response.$(MODEXT) \
+	m_d2dk.$(MODEXT) \
+	m_ddb.$(MODEXT) \
+	m_dvdb.$(MODEXT) \
+	m_efmas.$(MODEXT) \
+	m_eig2d.$(MODEXT) \
+	m_paral_pert.$(MODEXT) 
+
+d2dk_init.$(OBJEXT): m_d2dk.$(OBJEXT) 
+
+d2frnl.$(OBJEXT): m_efmas.$(OBJEXT) 
+
+ddb_write_blok.$(OBJEXT): m_ddb.$(OBJEXT) 
+
+dfpt_cgwf.$(OBJEXT): m_d2dk.$(OBJEXT) 
+
+dfpt_dyfro.$(OBJEXT): interfaces_72_response.$(OBJEXT) 
+
+dfpt_dyxc1.$(OBJEXT): interfaces_72_response.$(OBJEXT) 
+
+dfpt_eltfrkin.$(OBJEXT): interfaces_72_response.$(OBJEXT) 
+
+dfpt_eltfrxc.$(OBJEXT): interfaces_72_response.$(OBJEXT) 
+
+dfpt_mkvxcstr.$(OBJEXT): interfaces_72_response.$(OBJEXT) 
+
+dfpt_nselt.$(OBJEXT): interfaces_72_response.$(OBJEXT) 
+
+dfpt_nstdy.$(OBJEXT): interfaces_72_response.$(OBJEXT) 
+
+dfpt_nstpaw.$(OBJEXT): interfaces_72_response.$(OBJEXT) 
+
+dfpt_nstwf.$(OBJEXT): interfaces_72_response.$(OBJEXT) 
+
+dfpt_rhofermi.$(OBJEXT): interfaces_72_response.$(OBJEXT) 
+
+dfpt_rhotov.$(OBJEXT): interfaces_72_response.$(OBJEXT) 
+
+dfpt_scfcv.$(OBJEXT): interfaces_72_response.$(OBJEXT) 
+
+dfpt_vtorho.$(OBJEXT): interfaces_72_response.$(OBJEXT) 
+
+dfpt_vtowfk.$(OBJEXT): interfaces_72_response.$(OBJEXT) m_d2dk.$(OBJEXT) 
+
+dfpt_wfkfermi.$(OBJEXT): interfaces_72_response.$(OBJEXT) 
+
+dfptnl_doutput.$(OBJEXT): interfaces_72_response.$(OBJEXT) m_ddb.$(OBJEXT) 
+
+eig2stern.$(OBJEXT): interfaces_72_response.$(OBJEXT) 
+
+eig2tot.$(OBJEXT): interfaces_72_response.$(OBJEXT) m_ddb.$(OBJEXT) m_eig2d.$(OBJEXT) 
+
+interfaces_72_response.$(OBJEXT): m_d2dk.$(OBJEXT) m_ddb.$(OBJEXT) 

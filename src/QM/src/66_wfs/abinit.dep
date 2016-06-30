@@ -1,0 +1,36 @@
+#Dependencies (inside the directory) of the directory ./src/66_wfs
+#
+#COPYRIGHT
+#Copyright (C) 2010-2016 ABINIT group
+#This file is distributed under the terms of the
+#GNU General Public License, see ~abinit/COPYING
+#or http://www.gnu.org/copyleft/gpl.txt .
+#
+#THIS FILE IS GENERATED AUTOMATICALLY BY abilint.
+#To do that: config/scripts/abilint --dependencies . .
+
+CLEANFILES += \
+	interfaces_66_wfs.$(MODEXT) \
+	m_bandfft_kpt.$(MODEXT) \
+	m_esymm.$(MODEXT) \
+	m_invovl.$(MODEXT) 
+
+chebfi.$(OBJEXT): interfaces_66_wfs.$(OBJEXT) m_bandfft_kpt.$(OBJEXT) m_invovl.$(OBJEXT) 
+
+getghc.$(OBJEXT): interfaces_66_wfs.$(OBJEXT) m_bandfft_kpt.$(OBJEXT) 
+
+interfaces_66_wfs.$(OBJEXT): m_bandfft_kpt.$(OBJEXT) 
+
+m_invovl.$(OBJEXT): interfaces_66_wfs.$(OBJEXT) m_bandfft_kpt.$(OBJEXT) 
+
+prep_bandfft_tabs.$(OBJEXT): m_bandfft_kpt.$(OBJEXT) 
+
+prep_fourwf.$(OBJEXT): interfaces_66_wfs.$(OBJEXT) m_bandfft_kpt.$(OBJEXT) 
+
+prep_getghc.$(OBJEXT): interfaces_66_wfs.$(OBJEXT) m_bandfft_kpt.$(OBJEXT) 
+
+prep_nonlop.$(OBJEXT): interfaces_66_wfs.$(OBJEXT) m_bandfft_kpt.$(OBJEXT) 
+
+rayleigh_ritz.$(OBJEXT): interfaces_66_wfs.$(OBJEXT) 
+
+wfconv.$(OBJEXT): interfaces_66_wfs.$(OBJEXT) 

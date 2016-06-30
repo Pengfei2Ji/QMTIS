@@ -1,0 +1,97 @@
+#Dependencies (inside the directory) of the directory ./src/45_geomoptim
+#
+#COPYRIGHT
+#Copyright (C) 2010-2016 ABINIT group
+#This file is distributed under the terms of the
+#GNU General Public License, see ~abinit/COPYING
+#or http://www.gnu.org/copyleft/gpl.txt .
+#
+#THIS FILE IS GENERATED AUTOMATICALLY BY abilint.
+#To do that: config/scripts/abilint --dependencies . .
+
+CLEANFILES += \
+	interfaces_45_geomoptim.$(MODEXT) \
+	m_abihist.$(MODEXT) \
+	m_abiimages.$(MODEXT) \
+	m_abimover.$(MODEXT) \
+	m_bfgs.$(MODEXT) \
+	m_ga.$(MODEXT) \
+	m_mep.$(MODEXT) \
+	m_pimd.$(MODEXT) \
+	m_use_ga.$(MODEXT) 
+
+calc_b_matrix.$(OBJEXT): interfaces_45_geomoptim.$(OBJEXT) m_abimover.$(OBJEXT) 
+
+deloc2xcart.$(OBJEXT): interfaces_45_geomoptim.$(OBJEXT) m_abimover.$(OBJEXT) 
+
+interfaces_45_geomoptim.$(OBJEXT): m_abihist.$(OBJEXT) m_abimover.$(OBJEXT) m_ga.$(OBJEXT) m_mep.$(OBJEXT) m_pimd.$(OBJEXT) 
+
+isotemp.$(OBJEXT): m_abimover.$(OBJEXT) 
+
+m_abihist.$(OBJEXT): m_abimover.$(OBJEXT) 
+
+m_abiimages.$(OBJEXT): m_abihist.$(OBJEXT) 
+
+m_bfgs.$(OBJEXT): m_abimover.$(OBJEXT) 
+
+m_mep.$(OBJEXT): m_bfgs.$(OBJEXT) 
+
+m_use_ga.$(OBJEXT): m_ga.$(OBJEXT) 
+
+pimd_langevin_npt.$(OBJEXT): m_pimd.$(OBJEXT) 
+
+pimd_langevin_nvt.$(OBJEXT): m_pimd.$(OBJEXT) 
+
+pimd_nosehoover_npt.$(OBJEXT): m_pimd.$(OBJEXT) 
+
+pimd_nosehoover_nvt.$(OBJEXT): m_pimd.$(OBJEXT) 
+
+prec_simple.$(OBJEXT): m_abihist.$(OBJEXT) m_abimover.$(OBJEXT) 
+
+pred_bfgs.$(OBJEXT): interfaces_45_geomoptim.$(OBJEXT) m_abihist.$(OBJEXT) m_abimover.$(OBJEXT) m_bfgs.$(OBJEXT) 
+
+pred_delocint.$(OBJEXT): interfaces_45_geomoptim.$(OBJEXT) m_abihist.$(OBJEXT) m_abimover.$(OBJEXT) m_bfgs.$(OBJEXT) 
+
+pred_diisrelax.$(OBJEXT): m_abihist.$(OBJEXT) m_abimover.$(OBJEXT) m_bfgs.$(OBJEXT) 
+
+pred_isokinetic.$(OBJEXT): m_abihist.$(OBJEXT) m_abimover.$(OBJEXT) 
+
+pred_isothermal.$(OBJEXT): interfaces_45_geomoptim.$(OBJEXT) m_abihist.$(OBJEXT) m_abimover.$(OBJEXT) 
+
+pred_langevin.$(OBJEXT): m_abihist.$(OBJEXT) m_abimover.$(OBJEXT) 
+
+pred_moldyn.$(OBJEXT): interfaces_45_geomoptim.$(OBJEXT) m_abihist.$(OBJEXT) m_abimover.$(OBJEXT) 
+
+pred_nose.$(OBJEXT): m_abihist.$(OBJEXT) m_abimover.$(OBJEXT) 
+
+pred_simple.$(OBJEXT): m_abihist.$(OBJEXT) m_abimover.$(OBJEXT) 
+
+pred_srkna14.$(OBJEXT): m_abihist.$(OBJEXT) m_abimover.$(OBJEXT) 
+
+pred_steepdesc.$(OBJEXT): interfaces_45_geomoptim.$(OBJEXT) m_abihist.$(OBJEXT) m_abimover.$(OBJEXT) 
+
+pred_verlet.$(OBJEXT): interfaces_45_geomoptim.$(OBJEXT) m_abihist.$(OBJEXT) m_abimover.$(OBJEXT) 
+
+predict_neb.$(OBJEXT): m_mep.$(OBJEXT) 
+
+predict_pimd.$(OBJEXT): interfaces_45_geomoptim.$(OBJEXT) m_pimd.$(OBJEXT) 
+
+predict_steepest.$(OBJEXT): m_mep.$(OBJEXT) 
+
+predict_string.$(OBJEXT): m_mep.$(OBJEXT) 
+
+predictimg.$(OBJEXT): interfaces_45_geomoptim.$(OBJEXT) m_ga.$(OBJEXT) m_mep.$(OBJEXT) m_pimd.$(OBJEXT) m_use_ga.$(OBJEXT) 
+
+prtxfase.$(OBJEXT): m_abihist.$(OBJEXT) m_abimover.$(OBJEXT) 
+
+xcart2deloc.$(OBJEXT): interfaces_45_geomoptim.$(OBJEXT) m_abimover.$(OBJEXT) 
+
+xfh_recover_deloc.$(OBJEXT): interfaces_45_geomoptim.$(OBJEXT) m_abimover.$(OBJEXT) m_bfgs.$(OBJEXT) 
+
+xfh_recover_new.$(OBJEXT): interfaces_45_geomoptim.$(OBJEXT) m_abimover.$(OBJEXT) m_bfgs.$(OBJEXT) 
+
+xfh_update.$(OBJEXT): m_abimover.$(OBJEXT) 
+
+xfpack_vin2x.$(OBJEXT): interfaces_45_geomoptim.$(OBJEXT) 
+
+xfpack_x2vin.$(OBJEXT): interfaces_45_geomoptim.$(OBJEXT) 

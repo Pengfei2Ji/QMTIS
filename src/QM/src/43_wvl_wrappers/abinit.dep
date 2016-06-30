@@ -1,0 +1,54 @@
+#Dependencies (inside the directory) of the directory ./src/43_wvl_wrappers
+#
+#COPYRIGHT
+#Copyright (C) 2010-2016 ABINIT group
+#This file is distributed under the terms of the
+#GNU General Public License, see ~abinit/COPYING
+#or http://www.gnu.org/copyleft/gpl.txt .
+#
+#THIS FILE IS GENERATED AUTOMATICALLY BY abilint.
+#To do that: config/scripts/abilint --dependencies . .
+
+CLEANFILES += \
+	defs_PSolver.$(MODEXT) \
+	defs_wvltypes.$(MODEXT) \
+	interfaces_43_wvl_wrappers.$(MODEXT) \
+	m_abi2big.$(MODEXT) 
+
+interfaces_43_wvl_wrappers.$(OBJEXT): defs_wvltypes.$(OBJEXT) 
+
+m_abi2big.$(OBJEXT): defs_wvltypes.$(OBJEXT) 
+
+nullify_wvl_data.$(OBJEXT): defs_wvltypes.$(OBJEXT) 
+
+paw2wvl.$(OBJEXT): defs_wvltypes.$(OBJEXT) 
+
+paw2wvl_ij.$(OBJEXT): defs_wvltypes.$(OBJEXT) 
+
+wvl_cprjreorder.$(OBJEXT): defs_wvltypes.$(OBJEXT) 
+
+wvl_denspot_free.$(OBJEXT): defs_wvltypes.$(OBJEXT) 
+
+wvl_denspot_set.$(OBJEXT): defs_wvltypes.$(OBJEXT) 
+
+wvl_descr_atoms_set.$(OBJEXT): defs_wvltypes.$(OBJEXT) 
+
+wvl_descr_atoms_set_sym.$(OBJEXT): defs_wvltypes.$(OBJEXT) 
+
+wvl_descr_free.$(OBJEXT): defs_wvltypes.$(OBJEXT) 
+
+wvl_descr_psp_set.$(OBJEXT): defs_wvltypes.$(OBJEXT) 
+
+wvl_paw_free.$(OBJEXT): defs_wvltypes.$(OBJEXT) 
+
+wvl_projectors_free.$(OBJEXT): defs_wvltypes.$(OBJEXT) 
+
+wvl_projectors_set.$(OBJEXT): defs_wvltypes.$(OBJEXT) 
+
+wvl_setboxgeometry.$(OBJEXT): defs_wvltypes.$(OBJEXT) 
+
+wvl_wfs_free.$(OBJEXT): defs_wvltypes.$(OBJEXT) 
+
+wvl_wfs_lr_copy.$(OBJEXT): defs_wvltypes.$(OBJEXT) 
+
+wvl_wfs_set.$(OBJEXT): defs_wvltypes.$(OBJEXT) 

@@ -1,0 +1,67 @@
+#Dependencies (inside the directory) of the directory ./src/57_iovars
+#
+#COPYRIGHT
+#Copyright (C) 2010-2016 ABINIT group
+#This file is distributed under the terms of the
+#GNU General Public License, see ~abinit/COPYING
+#or http://www.gnu.org/copyleft/gpl.txt .
+#
+#THIS FILE IS GENERATED AUTOMATICALLY BY abilint.
+#To do that: config/scripts/abilint --dependencies . .
+
+CLEANFILES += \
+	interfaces_57_iovars.$(MODEXT) \
+	m_ab7_invars.$(MODEXT) \
+	m_ingeo_img.$(MODEXT) 
+
+chkinp.$(OBJEXT): interfaces_57_iovars.$(OBJEXT) 
+
+chkint.$(OBJEXT): interfaces_57_iovars.$(OBJEXT) 
+
+chkint_eq.$(OBJEXT): interfaces_57_iovars.$(OBJEXT) 
+
+chkint_ge.$(OBJEXT): interfaces_57_iovars.$(OBJEXT) 
+
+chkint_le.$(OBJEXT): interfaces_57_iovars.$(OBJEXT) 
+
+chkint_ne.$(OBJEXT): interfaces_57_iovars.$(OBJEXT) 
+
+finddistrproc.$(OBJEXT): interfaces_57_iovars.$(OBJEXT) 
+
+importxyz.$(OBJEXT): interfaces_57_iovars.$(OBJEXT) 
+
+ingeo.$(OBJEXT): interfaces_57_iovars.$(OBJEXT) m_ingeo_img.$(OBJEXT) 
+
+invars1.$(OBJEXT): interfaces_57_iovars.$(OBJEXT) 
+
+invars1m.$(OBJEXT): interfaces_57_iovars.$(OBJEXT) 
+
+invars2.$(OBJEXT): interfaces_57_iovars.$(OBJEXT) m_ingeo_img.$(OBJEXT) 
+
+invars2m.$(OBJEXT): interfaces_57_iovars.$(OBJEXT) 
+
+m_ab7_invars_f90.$(OBJEXT): interfaces_57_iovars.$(OBJEXT) 
+
+memorf.$(OBJEXT): interfaces_57_iovars.$(OBJEXT) 
+
+memory.$(OBJEXT): interfaces_57_iovars.$(OBJEXT) 
+
+memory_eval.$(OBJEXT): interfaces_57_iovars.$(OBJEXT) 
+
+mpi_setup.$(OBJEXT): interfaces_57_iovars.$(OBJEXT) 
+
+outqmc.$(OBJEXT): interfaces_57_iovars.$(OBJEXT) 
+
+outvar_a_h.$(OBJEXT): interfaces_57_iovars.$(OBJEXT) 
+
+outvar_i_n.$(OBJEXT): interfaces_57_iovars.$(OBJEXT) 
+
+outvar_o_z.$(OBJEXT): interfaces_57_iovars.$(OBJEXT) 
+
+outvars.$(OBJEXT): interfaces_57_iovars.$(OBJEXT) 
+
+parsefile.$(OBJEXT): interfaces_57_iovars.$(OBJEXT) 
+
+prttagm.$(OBJEXT): interfaces_57_iovars.$(OBJEXT) 
+
+prttagm_images.$(OBJEXT): interfaces_57_iovars.$(OBJEXT) 

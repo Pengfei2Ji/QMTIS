@@ -1,0 +1,33 @@
+#
+# Default configuration parameters obtained from Autoconf
+#
+
+# Package information
+abinit_target="x86_64_linux_gnu4.8"
+abinit_binpkg="abinit-8.0.6_x86_64_linux_gnu4.8"
+abinit_host="x86_64-unknown-linux-gnu"
+
+# Version
+abinit_version="8.0.6"
+abinit_version_base="8.0"
+abinit_version_major="8"
+abinit_version_minor="0"
+abinit_version_micro="6"
+abinit_version_build="20160629"
+
+# Locations
+abinit_srcdir="/media/witchariot/Grand_Tank/QMTIS/src/QM"
+abinit_builddir="/media/witchariot/Grand_Tank/QMTIS/src/QM"
+abinit_distdir="abinit-8.0.6"
+
+# Installation
+abinit_prefix="/opt/OpenFOAM/PyFoam-0.6.2/bin:/opt/OpenFOAM/ThirdParty-2.3.0/platforms/linux64Icc/ParaView-4.1.0/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/jvm/java-7-oracle/bin:/usr/lib/jvm/java-7-oracle/db/bin:/usr/lib/jvm/java-7-oracle/jre/bin:/opt/OpenMPI/1.8.5_GNU/bin:/opt/LAMMPS/lammps-10Aug15/src:/opt/OpenFOAM_LAMMPS/LAMMPS/lammps-13Jul11/src:/opt/QE/espresso-5.1.2/bin:/opt/ABINIT/GNU/7.10.4/bin:/home/witchariot/OpenFOAM/root-2.3.0/platforms/linux64GccDPOpt/bin:/opt/T_Freq/tfreq:/opt/Exciting/exciting/tools:/opt/Exciting/exciting/bin:/opt/Exciting/exciting/tools/stm:/opt/IMD/GNU/Original/imd/util_bin:/opt/IMD/GNU/Revised/All_In_One_Ce_Geph_Ke_041816/bin:/opt/ANSYS/161/ansys_inc/v161/Framework/bin/Linux64:/opt/Packmol/packmol_01062015:/opt/CPMD/GNU/4.1.0/bin:/opt/OVITO/ovito-2.6.2-x86_64/bin"
+abinit_bindir="/opt/OpenFOAM/PyFoam-0.6.2/bin:/opt/OpenFOAM/ThirdParty-2.3.0/platforms/linux64Icc/ParaView-4.1.0/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/jvm/java-7-oracle/bin:/usr/lib/jvm/java-7-oracle/db/bin:/usr/lib/jvm/java-7-oracle/jre/bin:/opt/OpenMPI/1.8.5_GNU/bin:/opt/LAMMPS/lammps-10Aug15/src:/opt/OpenFOAM_LAMMPS/LAMMPS/lammps-13Jul11/src:/opt/QE/espresso-5.1.2/bin:/opt/ABINIT/GNU/7.10.4/bin:/home/witchariot/OpenFOAM/root-2.3.0/platforms/linux64GccDPOpt/bin:/opt/T_Freq/tfreq:/opt/Exciting/exciting/tools:/opt/Exciting/exciting/bin:/opt/Exciting/exciting/tools/stm:/opt/IMD/GNU/Original/imd/util_bin:/opt/IMD/GNU/Revised/All_In_One_Ce_Geph_Ke_041816/bin:/opt/ANSYS/161/ansys_inc/v161/Framework/bin/Linux64:/opt/Packmol/packmol_01062015:/opt/CPMD/GNU/4.1.0/bin:/opt/OVITO/ovito-2.6.2-x86_64/bin/bin"
+abinit_datdir="/opt/OpenFOAM/PyFoam-0.6.2/bin:/opt/OpenFOAM/ThirdParty-2.3.0/platforms/linux64Icc/ParaView-4.1.0/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/jvm/java-7-oracle/bin:/usr/lib/jvm/java-7-oracle/db/bin:/usr/lib/jvm/java-7-oracle/jre/bin:/opt/OpenMPI/1.8.5_GNU/bin:/opt/LAMMPS/lammps-10Aug15/src:/opt/OpenFOAM_LAMMPS/LAMMPS/lammps-13Jul11/src:/opt/QE/espresso-5.1.2/bin:/opt/ABINIT/GNU/7.10.4/bin:/home/witchariot/OpenFOAM/root-2.3.0/platforms/linux64GccDPOpt/bin:/opt/T_Freq/tfreq:/opt/Exciting/exciting/tools:/opt/Exciting/exciting/bin:/opt/Exciting/exciting/tools/stm:/opt/IMD/GNU/Original/imd/util_bin:/opt/IMD/GNU/Revised/All_In_One_Ce_Geph_Ke_041816/bin:/opt/ANSYS/161/ansys_inc/v161/Framework/bin/Linux64:/opt/Packmol/packmol_01062015:/opt/CPMD/GNU/4.1.0/bin:/opt/OVITO/ovito-2.6.2-x86_64/bin/share/abinit"
+abinit_docdir="/opt/OpenFOAM/PyFoam-0.6.2/bin:/opt/OpenFOAM/ThirdParty-2.3.0/platforms/linux64Icc/ParaView-4.1.0/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/jvm/java-7-oracle/bin:/usr/lib/jvm/java-7-oracle/db/bin:/usr/lib/jvm/java-7-oracle/jre/bin:/opt/OpenMPI/1.8.5_GNU/bin:/opt/LAMMPS/lammps-10Aug15/src:/opt/OpenFOAM_LAMMPS/LAMMPS/lammps-13Jul11/src:/opt/QE/espresso-5.1.2/bin:/opt/ABINIT/GNU/7.10.4/bin:/home/witchariot/OpenFOAM/root-2.3.0/platforms/linux64GccDPOpt/bin:/opt/T_Freq/tfreq:/opt/Exciting/exciting/tools:/opt/Exciting/exciting/bin:/opt/Exciting/exciting/tools/stm:/opt/IMD/GNU/Original/imd/util_bin:/opt/IMD/GNU/Revised/All_In_One_Ce_Geph_Ke_041816/bin:/opt/ANSYS/161/ansys_inc/v161/Framework/bin/Linux64:/opt/Packmol/packmol_01062015:/opt/CPMD/GNU/4.1.0/bin:/opt/OVITO/ovito-2.6.2-x86_64/bin/doc/abinit"
+abinit_incdir="/opt/OpenFOAM/PyFoam-0.6.2/bin:/opt/OpenFOAM/ThirdParty-2.3.0/platforms/linux64Icc/ParaView-4.1.0/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/jvm/java-7-oracle/bin:/usr/lib/jvm/java-7-oracle/db/bin:/usr/lib/jvm/java-7-oracle/jre/bin:/opt/OpenMPI/1.8.5_GNU/bin:/opt/LAMMPS/lammps-10Aug15/src:/opt/OpenFOAM_LAMMPS/LAMMPS/lammps-13Jul11/src:/opt/QE/espresso-5.1.2/bin:/opt/ABINIT/GNU/7.10.4/bin:/home/witchariot/OpenFOAM/root-2.3.0/platforms/linux64GccDPOpt/bin:/opt/T_Freq/tfreq:/opt/Exciting/exciting/tools:/opt/Exciting/exciting/bin:/opt/Exciting/exciting/tools/stm:/opt/IMD/GNU/Original/imd/util_bin:/opt/IMD/GNU/Revised/All_In_One_Ce_Geph_Ke_041816/bin:/opt/ANSYS/161/ansys_inc/v161/Framework/bin/Linux64:/opt/Packmol/packmol_01062015:/opt/CPMD/GNU/4.1.0/bin:/opt/OVITO/ovito-2.6.2-x86_64/bin/include"
+abinit_libdir="/opt/OpenFOAM/PyFoam-0.6.2/bin:/opt/OpenFOAM/ThirdParty-2.3.0/platforms/linux64Icc/ParaView-4.1.0/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/jvm/java-7-oracle/bin:/usr/lib/jvm/java-7-oracle/db/bin:/usr/lib/jvm/java-7-oracle/jre/bin:/opt/OpenMPI/1.8.5_GNU/bin:/opt/LAMMPS/lammps-10Aug15/src:/opt/OpenFOAM_LAMMPS/LAMMPS/lammps-13Jul11/src:/opt/QE/espresso-5.1.2/bin:/opt/ABINIT/GNU/7.10.4/bin:/home/witchariot/OpenFOAM/root-2.3.0/platforms/linux64GccDPOpt/bin:/opt/T_Freq/tfreq:/opt/Exciting/exciting/tools:/opt/Exciting/exciting/bin:/opt/Exciting/exciting/tools/stm:/opt/IMD/GNU/Original/imd/util_bin:/opt/IMD/GNU/Revised/All_In_One_Ce_Geph_Ke_041816/bin:/opt/ANSYS/161/ansys_inc/v161/Framework/bin/Linux64:/opt/Packmol/packmol_01062015:/opt/CPMD/GNU/4.1.0/bin:/opt/OVITO/ovito-2.6.2-x86_64/bin/lib"
+abinit_mandir="/opt/OpenFOAM/PyFoam-0.6.2/bin:/opt/OpenFOAM/ThirdParty-2.3.0/platforms/linux64Icc/ParaView-4.1.0/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/jvm/java-7-oracle/bin:/usr/lib/jvm/java-7-oracle/db/bin:/usr/lib/jvm/java-7-oracle/jre/bin:/opt/OpenMPI/1.8.5_GNU/bin:/opt/LAMMPS/lammps-10Aug15/src:/opt/OpenFOAM_LAMMPS/LAMMPS/lammps-13Jul11/src:/opt/QE/espresso-5.1.2/bin:/opt/ABINIT/GNU/7.10.4/bin:/home/witchariot/OpenFOAM/root-2.3.0/platforms/linux64GccDPOpt/bin:/opt/T_Freq/tfreq:/opt/Exciting/exciting/tools:/opt/Exciting/exciting/bin:/opt/Exciting/exciting/tools/stm:/opt/IMD/GNU/Original/imd/util_bin:/opt/IMD/GNU/Revised/All_In_One_Ce_Geph_Ke_041816/bin:/opt/ANSYS/161/ansys_inc/v161/Framework/bin/Linux64:/opt/Packmol/packmol_01062015:/opt/CPMD/GNU/4.1.0/bin:/opt/OVITO/ovito-2.6.2-x86_64/bin/share/man"
+
+# Nightly builds
+nightly_timeout="@nightly_timeout@"

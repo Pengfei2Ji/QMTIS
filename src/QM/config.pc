@@ -1,0 +1,13 @@
+prefix=/opt/OpenFOAM/PyFoam-0.6.2/bin:/opt/OpenFOAM/ThirdParty-2.3.0/platforms/linux64Icc/ParaView-4.1.0/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/jvm/java-7-oracle/bin:/usr/lib/jvm/java-7-oracle/db/bin:/usr/lib/jvm/java-7-oracle/jre/bin:/opt/OpenMPI/1.8.5_GNU/bin:/opt/LAMMPS/lammps-10Aug15/src:/opt/OpenFOAM_LAMMPS/LAMMPS/lammps-13Jul11/src:/opt/QE/espresso-5.1.2/bin:/opt/ABINIT/GNU/7.10.4/bin:/home/witchariot/OpenFOAM/root-2.3.0/platforms/linux64GccDPOpt/bin:/opt/T_Freq/tfreq:/opt/Exciting/exciting/tools:/opt/Exciting/exciting/bin:/opt/Exciting/exciting/tools/stm:/opt/IMD/GNU/Original/imd/util_bin:/opt/IMD/GNU/Revised/All_In_One_Ce_Geph_Ke_041816/bin:/opt/ANSYS/161/ansys_inc/v161/Framework/bin/Linux64:/opt/Packmol/packmol_01062015:/opt/CPMD/GNU/4.1.0/bin:/opt/OVITO/ovito-2.6.2-x86_64/bin
+exec_prefix=${prefix}
+bindir=${exec_prefix}/bin
+includedir=${prefix}/include
+libdir=${exec_prefix}/lib
+
+Name: Abinit
+Description: Atomic-scale simulation software
+Version: 8.0.6
+URL: http://www.abinit.org/
+Requires: libatlas, netcdf
+Libs: -L${libdir} -lab7_parser
+Cflags: -I${includedir}/abinit

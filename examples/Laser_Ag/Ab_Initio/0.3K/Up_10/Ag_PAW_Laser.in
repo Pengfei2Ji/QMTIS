@@ -1,0 +1,42 @@
+# Cu: DOS at different Te
+
+prtdos 2
+#pawprtdos 2 
+
+# Definition of occupation numbers
+occopt 3
+tsmear 310 K
+
+#Definition of the unit cell
+#acell 3*4.049733736002 angstrom   
+acell 3*4.2086734254742355 angstrom
+rprim  0.0  0.5  0.5
+       0.5  0.0  0.5
+       0.5  0.5  0.0
+
+#Definition of the atom types
+ntypat 1
+znucl 47       
+
+#Definition of the atoms
+natom 1
+typat 1
+xred 0.0 0.0 0.0
+
+
+#Definition of the planewave basis set
+ecut  28.0         # Maximal kinetic energy cut-off, in Hartree
+#pawecutdg 70
+#Definition of the k-point grid
+ngkpt 10 10 10
+nshiftk 4         # of the reciprocal space (that form a BCC lattice !),
+                  # repeated four times, with different shifts :
+shiftk 0.5 0.5 0.5
+       0.5 0.0 0.0
+       0.0 0.5 0.0
+       0.0 0.0 0.5
+
+#Definition of the SCF procedure
+nstep 40          # Maximal number of SCF cycles
+toldfe 1.0d-6     # Will stop when, twice in a row, the difference 
+nband 50

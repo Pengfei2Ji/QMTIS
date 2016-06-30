@@ -1,0 +1,107 @@
+#############################################################################################################
+#############################################################################################################
+# FIle names
+coordname		Sys_In.xyz
+outfiles		Ag_Output.out
+# Parallel CPU
+cpu_dim		 	24 1 1
+#
+box_x			9151.0720 0 0
+box_y			0 40.853000 0
+box_z			0 0 40.853000
+pbc_dirs		0 1 1
+# parameters for EAM (Embedded Atom Method potentials)
+core_potential_file   	./Potentials/AGPOT_phi.imd.pt		# Core-core Pair Potential, tabulated in r**2 
+embedding_energy_file 	./Potentials/AGPOT_F.imd.pt		# Embedding Energy Function, tabulated in rho
+atomic_e-density_file 	./Potentials/AGPOT_rho.imd.pt		# Electron Density, tabulated in r**2
+
+# Invetvals for data files
+checkpt_int		10000
+eng_int			100
+# Distribution Output
+dist_int		500
+dist_dim		320 1 1
+#
+dist_dens_flag		2
+dist_presstens_flag     2
+# For NVT preparation
+ntypes 			1
+total_types		1
+masses			107.8682
+do_maxwell		1
+seed			41521
+starttemp		0.02585
+endtemp			0.02585
+inv_tau_eta		0.7
+# For TTM preparation
+# Numerical TTM parameters
+fd_n_timesteps		200
+fd_update_steps		1
+fd_ext			5 6 6
+fd_one_d		x
+# Material parameters
+fd_Ce_a9                0.0
+fd_Ce_a8                0.0
+fd_Ce_a7                0.0
+fd_Ce_a6                0.00151500555098
+fd_Ce_a5                -0.0209092933269
+fd_ce_a4                0.11149491438
+fd_ce_a3                -0.286365608182
+fd_Ce_a2                0.345607230603
+fd_Ce_a1                -0.0387281634379
+fd_Ce_a0                0.00116780086965
+#
+fd_Ke_A                 4.89450         # 3.57E+06 1/(s*K^2)
+fd_Ke_B                 13.2316         # 1.12E+11 1/(s*K)
+fd_Ke_Vf                141.5046        # 1.39E+06 m/s
+#
+fd_Geph_a9              0.0
+fd_Geph_a8              -1.8894113949e-06
+fd_Geph_a7              2.98245301015e-05
+fd_Geph_a6              -0.000192000578318
+fd_Geph_a5              0.000649130140591
+fd_Geph_a4              -0.00122152404147
+fd_Geph_a3              0.00120306254105
+fd_Geph_a2              -0.00046328994182
+fd_Geph_a1              6.00254905243e-05
+fd_Geph_a0              1.02282699423e-05
+#
+# Miscellaneous TTM parameters
+ttm_int			500
+#init_t_el		0.02585
+#fix_t_el		0.02585		# 300.0 K
+# Laser parameters
+laser_dir		1 0 0
+laser_offset		1960.9440				# 196.0944 nm from the original point
+laser_mu		1.4706e-03				# 12 nm + 56 nm, wavelength 800 nm
+laser_rescale_mode	4					# For TTM
+#
+# Damping pressure waves, non reflecting boundaries at the back of sample
+#xipdecay		4.0
+#pdecay_mode		2
+#ramp_fraction		0.2
+######************************************************************************************************#######
+# TTM
+laser_sigma_e		62.4220  				# Laser fluence: 1000 [J/m^2] = 0.1 [J/cm^2].
+laser_sigma_t		21.23142				# Tp = 500 fs, Tao_t = 212.3142, Tp = 2.355*Tao_t
+laser_t_0		2500
+
+#laser_t_1		0
+#laser_simga_e1		0
+#laser_simga_t1		0
+
+# Simulation NVT
+simulation		1
+ensemble		nvt
+timestep		0.1
+maxsteps		5000
+
+# Simulation NVE
+simulation		2
+ensemble		nve
+maxsteps		10000
+
+# Simulation TTM
+simulation 		3
+ensemble		ttm
+maxsteps		200000

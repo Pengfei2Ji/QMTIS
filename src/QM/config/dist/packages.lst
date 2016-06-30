@@ -1,0 +1,14 @@
+packages/debian/README.Debian
+packages/debian/abinit-common.dirs
+packages/debian/abinit-doc.docs
+packages/debian/abinit-test.dirs
+packages/debian/abinit.dirs
+packages/debian/abinit.manpages
+packages/debian/changelog
+packages/debian/compat
+packages/debian/control
+packages/debian/copyright
+packages/debian/docs
+packages/debian/rules
+packages/debian/source/format
+packages/debian/watch

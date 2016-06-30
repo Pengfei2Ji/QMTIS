@@ -1,0 +1,28 @@
+#Dependencies (inside the directory) of the directory ./src/95_drive
+#
+#COPYRIGHT
+#Copyright (C) 2010-2016 ABINIT group
+#This file is distributed under the terms of the
+#GNU General Public License, see ~abinit/COPYING
+#or http://www.gnu.org/copyleft/gpl.txt .
+#
+#THIS FILE IS GENERATED AUTOMATICALLY BY abilint.
+#To do that: config/scripts/abilint --dependencies . .
+
+CLEANFILES += \
+	interfaces_95_drive.$(MODEXT) \
+	m_argparse.$(MODEXT) 
+
+driver.$(OBJEXT): interfaces_95_drive.$(OBJEXT) 
+
+gstate.$(OBJEXT): interfaces_95_drive.$(OBJEXT) 
+
+gstateimg.$(OBJEXT): interfaces_95_drive.$(OBJEXT) 
+
+gwls_sternheimer.$(OBJEXT): interfaces_95_drive.$(OBJEXT) 
+
+mover.$(OBJEXT): interfaces_95_drive.$(OBJEXT) 
+
+nonlinear.$(OBJEXT): interfaces_95_drive.$(OBJEXT) 
+
+respfn.$(OBJEXT): interfaces_95_drive.$(OBJEXT) 

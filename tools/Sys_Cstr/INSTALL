@@ -1,0 +1,22 @@
+#####################################################
+# QMTIS QMTIMS QMTIS QMTIS QMTIS QMTIMS QMTIS QMTIS #
+#####################################################
+# Version 1.2
+# Datae_ 2015-04-08
+#####################################################
+#
+# Tool: Sys_Cstr (System Construction) ##############
+#
+# Developed by: Pengfei Ji 
+#####################################################
+
+Instruction to compile and install the Syu_Cstr code, the functionality of which is to construct simulation system
+(Simple Cubic, Body Centered Cubic, Face Centered Cubic, 2D hexagonal crystal, cubic diamond structure, zincblende
+structure.
+
+#####################################################
+
+Installation: By typing "make", Sys_Cstry will be automatically installled under the directory of QMTIS/bin. You may
+make changes of the default c-compilor, path of compiled executable file.
+
+#####################################################

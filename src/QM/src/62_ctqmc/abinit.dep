@@ -1,0 +1,52 @@
+#Dependencies (inside the directory) of the directory ./src/62_ctqmc
+#
+#COPYRIGHT
+#Copyright (C) 2010-2016 ABINIT group
+#This file is distributed under the terms of the
+#GNU General Public License, see ~abinit/COPYING
+#or http://www.gnu.org/copyleft/gpl.txt .
+#
+#THIS FILE IS GENERATED AUTOMATICALLY BY abilint.
+#To do that: config/scripts/abilint --dependencies . .
+
+CLEANFILES += \
+	interfaces_62_ctqmc.$(MODEXT) \
+	m_BathOperator.$(MODEXT) \
+	m_Ctqmc.$(MODEXT) \
+	m_CtqmcInterface.$(MODEXT) \
+	m_FFTHyb.$(MODEXT) \
+	m_Global.$(MODEXT) \
+	m_GreenHyb.$(MODEXT) \
+	m_ImpurityOperator.$(MODEXT) \
+	m_ListCdagC.$(MODEXT) \
+	m_MapHyb.$(MODEXT) \
+	m_MatrixHyb.$(MODEXT) \
+	m_OurRng.$(MODEXT) \
+	m_Stat.$(MODEXT) \
+	m_Vector.$(MODEXT) \
+	m_VectorInt.$(MODEXT) \
+	m_data4entropyDMFT.$(MODEXT) 
+
+m_BathOperator.$(OBJEXT): m_ListCdagC.$(OBJEXT) m_MatrixHyb.$(OBJEXT) m_Vector.$(OBJEXT) m_VectorInt.$(OBJEXT) m_global.$(OBJEXT) 
+
+m_Ctqmc.$(OBJEXT): m_BathOperator.$(OBJEXT) m_FFTHyb.$(OBJEXT) m_GreenHyb.$(OBJEXT) m_ImpurityOperator.$(OBJEXT) m_OurRng.$(OBJEXT) m_Stat.$(OBJEXT) m_Vector.$(OBJEXT) m_global.$(OBJEXT) 
+
+m_CtqmcInterface.$(OBJEXT): m_Ctqmc.$(OBJEXT) 
+
+m_FFTHyb.$(OBJEXT): m_global.$(OBJEXT) 
+
+m_GreenHyb.$(OBJEXT): m_ListCdagC.$(OBJEXT) m_MapHyb.$(OBJEXT) m_MatrixHyb.$(OBJEXT) m_Vector.$(OBJEXT) m_VectorInt.$(OBJEXT) m_global.$(OBJEXT) 
+
+m_ImpurityOperator.$(OBJEXT): m_ListCdagC.$(OBJEXT) m_global.$(OBJEXT) 
+
+m_ListCdagC.$(OBJEXT): m_global.$(OBJEXT) 
+
+m_MapHyb.$(OBJEXT): m_global.$(OBJEXT) 
+
+m_MatrixHyb.$(OBJEXT): m_global.$(OBJEXT) 
+
+m_Stat.$(OBJEXT): m_global.$(OBJEXT) 
+
+m_Vector.$(OBJEXT): m_global.$(OBJEXT) 
+
+m_VectorInt.$(OBJEXT): m_global.$(OBJEXT) 

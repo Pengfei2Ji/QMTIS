@@ -1,0 +1,13 @@
+#!/bin/bash
+
+#SBATCH -p all
+#SBATCH -J 5f0.1J16V
+#SBATCH -o 000.o%J
+#SBATCH -e 000.e%J
+#SBATCH -t 47:55:00
+
+# Set number of CPUs
+#SBATCH -n 24
+
+# Start IMD job
+mpirun imd-mpi-nvt-nve-ttm_Ce_Geph_Ke_Vf_AbI-eam-laser-stress_GNU -p Laser_Ag.inp > laser_Ag.log

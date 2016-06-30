@@ -1,0 +1,21 @@
+#Dependencies (inside the directory) of the directory ./src/65_lotf_base
+#
+#COPYRIGHT
+#Copyright (C) 2010-2016 ABINIT group
+#This file is distributed under the terms of the
+#GNU General Public License, see ~abinit/COPYING
+#or http://www.gnu.org/copyleft/gpl.txt .
+#
+#THIS FILE IS GENERATED AUTOMATICALLY BY abilint.
+#To do that: config/scripts/abilint --dependencies . .
+
+CLEANFILES += \
+	bond_lotf.$(MODEXT) \
+	defs_param_lotf.$(MODEXT) \
+	glue_lotf.$(MODEXT) \
+	interfaces_65_lotf_base.$(MODEXT) \
+	pbc_lotf.$(MODEXT) \
+	tools_lotf.$(MODEXT) \
+	work_var_lotf.$(MODEXT) 
+
+m_work_var_lotf.$(OBJEXT): defs_param_lotf.$(OBJEXT) m_bond_lotf.$(OBJEXT) m_pbc_lotf.$(OBJEXT) 

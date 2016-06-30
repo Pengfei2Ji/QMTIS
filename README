@@ -1,0 +1,24 @@
+This is the QMTIS software package.
+
+QMTIS stands for Quantum-mechanics Molecular-dynamics Two-temperature-model Integrated Simulator.
+
+Copyright (2015) Pengfei Ji.
+
+Personal Page: https://sites.google.com/site/pengfeiji2htec/
+
+----------------------------------------------------------------------
+
+QMTIS is a multiscale numerical simulation code designed to run efficiently on parallel computers. It was
+developed by Dr. Pengfei at Multiscale Thermal Transport (http://mtt.missouri.edu/) labortary at University 
+of Missouri-Columbia).
+  
+For more detailed information about the QMTIS code, please contact Pengfei Ji from: pjn3b@mail.missouri.edu.
+
+The QMTIMS distribution includes the following files and directories:
+
+README			   this file
+manual			   Manual for the main code and its pre-/post-processing tools
+examples		   simple test problems
+potentials		   interatomic potential files
+src			   source files
+tools			   pre-/post-processing tools

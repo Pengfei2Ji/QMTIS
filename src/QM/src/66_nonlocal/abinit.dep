@@ -1,0 +1,43 @@
+#Dependencies (inside the directory) of the directory ./src/66_nonlocal
+#
+#COPYRIGHT
+#Copyright (C) 2010-2016 ABINIT group
+#This file is distributed under the terms of the
+#GNU General Public License, see ~abinit/COPYING
+#or http://www.gnu.org/copyleft/gpl.txt .
+#
+#THIS FILE IS GENERATED AUTOMATICALLY BY abilint.
+#To do that: config/scripts/abilint --dependencies . .
+
+CLEANFILES += \
+	interfaces_66_nonlocal.$(MODEXT) \
+	m_commutator_vkbr.$(MODEXT) \
+	m_fock.$(MODEXT) \
+	m_gemm_nonlop.$(MODEXT) \
+	m_hamiltonian.$(MODEXT) 
+
+ctocprj.$(OBJEXT): interfaces_66_nonlocal.$(OBJEXT) 
+
+getcprj.$(OBJEXT): interfaces_66_nonlocal.$(OBJEXT) 
+
+interfaces_66_nonlocal.$(OBJEXT): m_hamiltonian.$(OBJEXT) 
+
+m_commutator_vkbr.$(OBJEXT): interfaces_66_nonlocal.$(OBJEXT) 
+
+m_gemm_nonlop.$(OBJEXT): interfaces_66_nonlocal.$(OBJEXT) m_hamiltonian.$(OBJEXT) 
+
+m_hamiltonian.$(OBJEXT): m_fock.$(OBJEXT) 
+
+nonlop.$(OBJEXT): interfaces_66_nonlocal.$(OBJEXT) m_gemm_nonlop.$(OBJEXT) m_hamiltonian.$(OBJEXT) 
+
+nonlop_pl.$(OBJEXT): interfaces_66_nonlocal.$(OBJEXT) 
+
+nonlop_ylm.$(OBJEXT): interfaces_66_nonlocal.$(OBJEXT) 
+
+opernl2.$(OBJEXT): interfaces_66_nonlocal.$(OBJEXT) 
+
+opernl3.$(OBJEXT): interfaces_66_nonlocal.$(OBJEXT) 
+
+opernl4a.$(OBJEXT): interfaces_66_nonlocal.$(OBJEXT) 
+
+opernl4b.$(OBJEXT): interfaces_66_nonlocal.$(OBJEXT) 

@@ -1,0 +1,73 @@
+#Dependencies (inside the directory) of the directory ./src/41_geometry
+#
+#COPYRIGHT
+#Copyright (C) 2010-2016 ABINIT group
+#This file is distributed under the terms of the
+#GNU General Public License, see ~abinit/COPYING
+#or http://www.gnu.org/copyleft/gpl.txt .
+#
+#THIS FILE IS GENERATED AUTOMATICALLY BY abilint.
+#To do that: config/scripts/abilint --dependencies . .
+
+CLEANFILES += \
+	interfaces_41_geometry.$(MODEXT) \
+	m_ab7_symmetry.$(MODEXT) \
+	m_crystal.$(MODEXT) \
+	m_dynmat.$(MODEXT) \
+	m_ewald.$(MODEXT) 
+
+bonds_lgth_angles.$(OBJEXT): interfaces_41_geometry.$(OBJEXT) 
+
+dist2.$(OBJEXT): interfaces_41_geometry.$(OBJEXT) 
+
+gensymspgr.$(OBJEXT): interfaces_41_geometry.$(OBJEXT) m_crystal.$(OBJEXT) 
+
+ioniondist.$(OBJEXT): interfaces_41_geometry.$(OBJEXT) 
+
+littlegroup_pert.$(OBJEXT): interfaces_41_geometry.$(OBJEXT) 
+
+m_ab7_symmetry.$(OBJEXT): interfaces_41_geometry.$(OBJEXT) 
+
+m_crystal.$(OBJEXT): interfaces_41_geometry.$(OBJEXT) 
+
+m_dynmat.$(OBJEXT): m_ewald.$(OBJEXT) 
+
+prt_cif.$(OBJEXT): interfaces_41_geometry.$(OBJEXT) 
+
+prtspgroup.$(OBJEXT): interfaces_41_geometry.$(OBJEXT) 
+
+randomcellpos.$(OBJEXT): interfaces_41_geometry.$(OBJEXT) 
+
+remove_inversion.$(OBJEXT): interfaces_41_geometry.$(OBJEXT) 
+
+shellstruct.$(OBJEXT): interfaces_41_geometry.$(OBJEXT) 
+
+smallprim.$(OBJEXT): interfaces_41_geometry.$(OBJEXT) 
+
+stresssym.$(OBJEXT): interfaces_41_geometry.$(OBJEXT) 
+
+symanal.$(OBJEXT): interfaces_41_geometry.$(OBJEXT) 
+
+symatm.$(OBJEXT): interfaces_41_geometry.$(OBJEXT) 
+
+symbrav.$(OBJEXT): interfaces_41_geometry.$(OBJEXT) 
+
+symcharac.$(OBJEXT): interfaces_41_geometry.$(OBJEXT) 
+
+symlatt.$(OBJEXT): interfaces_41_geometry.$(OBJEXT) 
+
+symmetrize_rprimd.$(OBJEXT): interfaces_41_geometry.$(OBJEXT) 
+
+symptgroup.$(OBJEXT): interfaces_41_geometry.$(OBJEXT) 
+
+symsgcube.$(OBJEXT): interfaces_41_geometry.$(OBJEXT) 
+
+symsghexa.$(OBJEXT): interfaces_41_geometry.$(OBJEXT) 
+
+symsgmono.$(OBJEXT): interfaces_41_geometry.$(OBJEXT) 
+
+symsgortho.$(OBJEXT): interfaces_41_geometry.$(OBJEXT) 
+
+symsgtetra.$(OBJEXT): interfaces_41_geometry.$(OBJEXT) 
+
+symspgr.$(OBJEXT): interfaces_41_geometry.$(OBJEXT) 

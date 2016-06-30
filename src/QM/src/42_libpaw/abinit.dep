@@ -1,0 +1,65 @@
+#Dependencies (inside the directory) of the directory ./src/42_libpaw
+#
+#COPYRIGHT
+#Copyright (C) 2010-2016 ABINIT group
+#This file is distributed under the terms of the
+#GNU General Public License, see ~abinit/COPYING
+#or http://www.gnu.org/copyleft/gpl.txt .
+#
+#THIS FILE IS GENERATED AUTOMATICALLY BY abilint.
+#To do that: config/scripts/abilint --dependencies . .
+
+CLEANFILES += \
+	interfaces_42_libpaw.$(MODEXT) \
+	m_libpaw_defs.$(MODEXT) \
+	m_libpaw_libxc.$(MODEXT) \
+	m_libpaw_libxc_funcs.$(MODEXT) \
+	m_libpaw_mpi.$(MODEXT) \
+	m_libpaw_tools.$(MODEXT) \
+	m_paral_atom.$(MODEXT) \
+	m_paw_an.$(MODEXT) \
+	m_paw_atom.$(MODEXT) \
+	m_paw_finegrid.$(MODEXT) \
+	m_paw_gaussfit.$(MODEXT) \
+	m_paw_ij.$(MODEXT) \
+	m_paw_io.$(MODEXT) \
+	m_paw_numeric.$(MODEXT) \
+	m_paw_sphharm.$(MODEXT) \
+	m_pawang.$(MODEXT) \
+	m_pawcprj.$(MODEXT) \
+	m_pawdij.$(MODEXT) \
+	m_pawfgrtab.$(MODEXT) \
+	m_pawpsp.$(MODEXT) \
+	m_pawrad.$(MODEXT) \
+	m_pawrhoij.$(MODEXT) \
+	m_pawtab.$(MODEXT) \
+	m_pawxc.$(MODEXT) \
+	m_pawxmlps.$(MODEXT) 
+
+m_paw_an.$(OBJEXT): m_paral_atom.$(OBJEXT) m_pawang.$(OBJEXT) m_pawtab.$(OBJEXT) 
+
+m_paw_atom.$(OBJEXT): m_paw_numeric.$(OBJEXT) m_pawrad.$(OBJEXT) m_pawtab.$(OBJEXT) 
+
+m_paw_finegrid.$(OBJEXT): m_paw_numeric.$(OBJEXT) m_paw_sphharm.$(OBJEXT) m_pawtab.$(OBJEXT) 
+
+m_paw_gaussfit.$(OBJEXT): m_paw_numeric.$(OBJEXT) m_pawrad.$(OBJEXT) 
+
+m_paw_ij.$(OBJEXT): m_paral_atom.$(OBJEXT) m_paw_io.$(OBJEXT) m_pawtab.$(OBJEXT) 
+
+m_pawang.$(OBJEXT): m_paw_sphharm.$(OBJEXT) 
+
+m_pawcprj.$(OBJEXT): m_pawtab.$(OBJEXT) 
+
+m_pawdij.$(OBJEXT): m_paral_atom.$(OBJEXT) m_paw_an.$(OBJEXT) m_paw_finegrid.$(OBJEXT) m_paw_ij.$(OBJEXT) m_paw_io.$(OBJEXT) m_paw_sphharm.$(OBJEXT) m_pawang.$(OBJEXT) m_pawfgrtab.$(OBJEXT) m_pawrad.$(OBJEXT) m_pawrhoij.$(OBJEXT) m_pawtab.$(OBJEXT) 
+
+m_pawfgrtab.$(OBJEXT): m_paral_atom.$(OBJEXT) 
+
+m_pawpsp.$(OBJEXT): m_libpaw_libxc.$(OBJEXT) m_libpaw_tools.$(OBJEXT) m_paw_atom.$(OBJEXT) m_paw_gaussfit.$(OBJEXT) m_paw_numeric.$(OBJEXT) m_pawang.$(OBJEXT) m_pawrad.$(OBJEXT) m_pawtab.$(OBJEXT) m_pawxc.$(OBJEXT) m_pawxmlps.$(OBJEXT) 
+
+m_pawrad.$(OBJEXT): m_paw_numeric.$(OBJEXT) 
+
+m_pawrhoij.$(OBJEXT): m_libpaw_tools.$(OBJEXT) m_paral_atom.$(OBJEXT) m_paw_io.$(OBJEXT) m_pawang.$(OBJEXT) m_pawtab.$(OBJEXT) 
+
+m_pawxc.$(OBJEXT): m_libpaw_libxc.$(OBJEXT) m_pawang.$(OBJEXT) m_pawrad.$(OBJEXT) 
+
+m_pawxmlps.$(OBJEXT): m_paw_numeric.$(OBJEXT) m_pawrad.$(OBJEXT) 

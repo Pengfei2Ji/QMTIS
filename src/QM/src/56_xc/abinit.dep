@@ -1,0 +1,40 @@
+#Dependencies (inside the directory) of the directory ./src/56_xc
+#
+#COPYRIGHT
+#Copyright (C) 2010-2016 ABINIT group
+#This file is distributed under the terms of the
+#GNU General Public License, see ~abinit/COPYING
+#or http://www.gnu.org/copyleft/gpl.txt .
+#
+#THIS FILE IS GENERATED AUTOMATICALLY BY abilint.
+#To do that: config/scripts/abilint --dependencies . .
+
+CLEANFILES += \
+	interfaces_56_xc.$(MODEXT) \
+	m_electronpositron.$(MODEXT) \
+	m_kxc.$(MODEXT) \
+	m_xc_vdw.$(MODEXT) 
+
+dfpt_mkvxc.$(OBJEXT): interfaces_56_xc.$(OBJEXT) 
+
+dfpt_mkvxc_noncoll.$(OBJEXT): interfaces_56_xc.$(OBJEXT) 
+
+dfpt_mkvxcgga.$(OBJEXT): interfaces_56_xc.$(OBJEXT) 
+
+gammapositron_fft.$(OBJEXT): interfaces_56_xc.$(OBJEXT) m_electronpositron.$(OBJEXT) 
+
+hybrid_corr.$(OBJEXT): interfaces_56_xc.$(OBJEXT) 
+
+interfaces_56_xc.$(OBJEXT): m_electronpositron.$(OBJEXT) 
+
+m_kxc.$(OBJEXT): interfaces_56_xc.$(OBJEXT) 
+
+rhohxc.$(OBJEXT): interfaces_56_xc.$(OBJEXT) m_electronpositron.$(OBJEXT) m_xc_vdw.$(OBJEXT) 
+
+rhohxcpositron.$(OBJEXT): interfaces_56_xc.$(OBJEXT) m_electronpositron.$(OBJEXT) 
+
+xcden.$(OBJEXT): interfaces_56_xc.$(OBJEXT) 
+
+xchybrid_ncpp_cc.$(OBJEXT): interfaces_56_xc.$(OBJEXT) 
+
+xcpot.$(OBJEXT): interfaces_56_xc.$(OBJEXT) 

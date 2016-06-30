@@ -1,0 +1,3 @@
+fcflags_opt_default='-O2 -mtune=native -march=native'
+fcflags_opt_20_datashare='-O0'
+fcflags_opt_dirlist=' 20_datashare'

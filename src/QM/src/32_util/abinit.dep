@@ -1,0 +1,25 @@
+#Dependencies (inside the directory) of the directory ./src/32_util
+#
+#COPYRIGHT
+#Copyright (C) 2010-2016 ABINIT group
+#This file is distributed under the terms of the
+#GNU General Public License, see ~abinit/COPYING
+#or http://www.gnu.org/copyleft/gpl.txt .
+#
+#THIS FILE IS GENERATED AUTOMATICALLY BY abilint.
+#To do that: config/scripts/abilint --dependencies . .
+
+CLEANFILES += \
+	interfaces_32_util.$(MODEXT) \
+	m_atomdata.$(MODEXT) \
+	m_exp_mat.$(MODEXT) \
+	m_gwls_utility.$(MODEXT) \
+	m_matrix.$(MODEXT) \
+	m_optic_tools.$(MODEXT) \
+	m_pptools.$(MODEXT) \
+	m_special_funcs.$(MODEXT) \
+	m_wfutils.$(MODEXT) 
+
+smatrix.$(OBJEXT): interfaces_32_util.$(OBJEXT) 
+
+test_radsintr.$(OBJEXT): interfaces_32_util.$(OBJEXT) 
